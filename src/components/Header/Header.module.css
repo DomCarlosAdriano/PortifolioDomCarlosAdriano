@@ -1,0 +1,250 @@
+.header {
+  width: 100vw;
+  position: absolute;
+}
+
+.nav {
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3.9rem;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 500;
+  background: linear-gradient(90deg,
+      #2121f2 44%,
+      rgba(51, 153, 255, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+.li_desktop{
+  text-decoration: none;
+  color: rgba(226, 224, 224, 0.934);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile_menu_icon {
+  display: none;
+}
+
+.mobile_menu_icon button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.mobile_menu_icon button i{
+  font-size: 1.5rem;
+  color:  rgba(226, 224, 224, 0.934);
+}
+
+.mobileMenu{
+  background-color: #111;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 1px;
+}
+
+.mobileXicon{
+  width: 100%;
+  text-align: end;
+  padding: 2rem;
+}
+
+.mobileXicon button{
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color:  rgba(226, 224, 224, 0.934);
+}
+
+.mobileMenu ul{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.li{
+  text-decoration: none;
+  color: rgba(226, 224, 224, 0.934);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.button_contato_mobile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button_contato_mobile a{
+  height: 3rem;
+  width: 14rem;
+}
+
+.mobileMenu_disabled{
+  display: none;
+}
+
+/* ======= ANIMAÇÃO BUTÃO CONTATO ======= */
+
+
+.glow_on_hover {
+  width: 11.25rem;
+  height: 2.4rem;
+  color: var(--azul-claro);
+  font-size: 1.1rem;
+  border: 2px solid #002bff;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+}
+
+.glow_on_hover:before {
+  content: '';
+  background:  linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow_on_hover:hover:before {
+  opacity: 1;
+}
+
+.glow_on_hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ------------ Responsive ----------------*/
+
+@media (max-width: 906px) {
+  .mobile_menu_icon {
+    display: flex;
+  }
+
+  .nav{
+    padding-inline: 3rem;
+  }
+
+  .nav ul{
+    display: none;
+  }
+
+  .button_contato_desktop{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav{
+    padding-inline: 2rem;
+  }
+}
+
+/* ======= Animation Menu ======= */
+.li {
+  width: 100%;
+  height: 4rem;
+  animation: animateNavItems 500ms linear forwards; 
+  transform-origin: top right;
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.li:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.li:nth-child(4) {
+  animation-delay: 400ms;
+}
+
+.li_button_contato{
+  animation-delay: 500ms;
+}
+
+@keyframes animateNavItems {
+  0% {
+    transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+  }
+  100% {
+    transform: rotateZ(0) rotateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+

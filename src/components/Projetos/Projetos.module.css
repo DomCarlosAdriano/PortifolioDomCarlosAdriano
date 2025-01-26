@@ -1,0 +1,99 @@
+.section {
+    padding: 7rem 3rem 10rem 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    color: var(--azul-claro);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-block: 1rem;
+    width: 70Vw;
+    gap: 1rem;
+    position: relative;
+}
+
+.card{
+    background-color: var(--background-lista);
+    width: 48.5%;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 3px solid var(--azul-escuro);
+    gap: 1rem;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.link img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+.card h2{
+    text-align: center;
+    color: white;
+}
+
+
+.card span{
+    font-size: large;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+}
+
+.card span i{
+    color:  white;;
+}
+
+
+
+.javaIcon{
+    color: white;
+}
+
+
+
+
+/* ------------ Responsive ----------------*/
+
+@media (max-width: 848px) {
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card{
+        background-color: var(--background-lista);
+        width: 80%;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+    .card{
+        width: 90%;
+    }
+  }

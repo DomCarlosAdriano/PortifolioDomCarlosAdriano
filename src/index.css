@@ -1,0 +1,33 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-1: #111111;
+  --background-2: #151515;
+  --background-lista: #33333357;
+  --azul-claro: #6699ff;
+  --azul-escuro: #002bff;
+
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background-1);
+  
+}
+
