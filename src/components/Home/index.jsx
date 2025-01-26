@@ -8,7 +8,7 @@ function Home() {
      <div className={style.border_pulse }>
         <div className={style.pulse_shadow}></div>
         <img
-          src="../public/profile-pic.png"
+          src="https://github.com/DomCarlosAdriano/PortifolioDomCarlosAdriano/blob/main/public/profile-pic.png?raw=true"
           width="100%" height="100%"
         />
       </div>
