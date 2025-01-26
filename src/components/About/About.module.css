@@ -123,6 +123,17 @@
 
   @media (max-width: 650px){
    .section{
-    padding: 10rem 3rem;
+    padding: 6rem 3rem;
    } 
+  }
+
+  @media (max-width: 380px){
+
+    .section{
+      padding: 6rem 1.5rem;
+     } 
+
+    .texto_sobre_Mim h1{
+      font-size: 2rem;
+    }
   }
