@@ -8,7 +8,7 @@ function Home() {
      <div className={style.border_pulse }>
         <div className={style.pulse_shadow}></div>
         <img
-          src="../public/euPhoto.webp"
+          src="../public/profile-pic.png"
           width="100%" height="100%"
         />
       </div>
