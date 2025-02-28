@@ -43,7 +43,7 @@ function About() {
                         Se você é recrutador e procura um desenvolvedor para fazer parte da sua equipe, eu sou a pessoa certa.
                         Abaixo deixarei meu currículo para que você possa me conhecer melhor
                     </p>
-                    <a href="#">Baixar Curriculo</a>
+                    <a href="./public/curriculoDEV.pdf" download="curriculoDEV.pdf">Baixar Curriculo</a>
                 </ol>
                 <ol className={style.freelancer}>
                     <h1>Contratar Desenvolvedor de Sites freelancer</h1>
@@ -51,7 +51,7 @@ function About() {
                        Se você esta a procura de um profissional para fazer o site da sua empresa eu sou a pessoa certa.  
                        Abaixo deixarei meu currículo para que você possam me conhecer melhor
                     </p>
-                    <a href="#">Vamos Trabalhar Juntos</a>
+                    <a href="./public/curriculoDEV.pdf" download="curriculoDEV.pdf">Vamos Trabalhar Juntos</a>
                 </ol>
             </ul>
 

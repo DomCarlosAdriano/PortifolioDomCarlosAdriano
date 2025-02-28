@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import style from "./Header.module.css"
+import { Link } from "react-scroll";
 
 function Home() {
  const [menu, setMenu] = useState(false)
  const body = document.querySelector("html");
+ 
  const activeMenu = ()=>{
   if(menu){
     setMenu(false)
@@ -15,13 +17,13 @@ function Home() {
  }
   
   return (
-    <header className={style.header}>
+    <header className={style.header} id="home">
       <nav className={style.nav}>
-        <span className={style.logo}>Dom_Carlos</span>
+        <a href="https://www.instagram.com/direct/t/Dom_Carlos_Adriano/" target="_blank" rel="noopener noreferrer" className={style.logo}>Dom_Carlos</a>
         <ul className={style.ul_nav}>
-          <li className={style.li_desktop} >Inicio</li>
-          <li className={style.li_desktop}>Quem sou</li>
-          <li className={style.li_desktop}>Projetos</li>
+          <li className={style.li_desktop} ><Link to="home" smooth={true} duration={100}>Inicio</Link></li>
+          <li className={style.li_desktop}><Link to="quem_sou" smooth={true} duration={100} >Quem sou</Link></li>
+          <li className={style.li_desktop}><Link to="projetos" smooth={true} duration={100} >Projetos</Link></li>
         </ul>
 
         <a className={`${style.glow_on_hover} ${style.button_contato_desktop}`}>
@@ -38,9 +40,9 @@ function Home() {
           <button onClick={activeMenu}> <i className="fa-solid fa-xmark"></i></button>
         </div>
         <ul>
-          <li className={style.li}>Inicio</li>
-          <li className={style.li}>Quem sou</li>
-          <li className={style.li}>Projetos</li>
+          <li className={style.li}><Link to="home" smooth={true} duration={100} onClick={activeMenu}>Inicio</Link></li>
+          <li className={style.li}><Link to="quem_sou" smooth={true} duration={100} onClick={activeMenu}>Quem sou</Link></li>
+          <li className={style.li}><Link to="projetos" smooth={true} duration={100} onClick={activeMenu} >Projetos</Link></li>
         </ul>
         <div className={style.button_contato_mobile}>
           <a className={`${style.li} ${style.glow_on_hover}`}>

@@ -5,13 +5,13 @@ function Home() {
   return (
     <section className={style.section} id="inicio">
     <div className={style.container}>
-     <div className={style.border_pulse }>
+     <a  href="https://wa.me/5582993647023" target="_blank" rel="noopener noreferrer" className={style.border_pulse } >
         <div className={style.pulse_shadow}></div>
         <img
           src="https://github.com/DomCarlosAdriano/PortifolioDomCarlosAdriano/blob/main/public/profile-pic.png?raw=true"
           width="100%" height="100%"
         />
-      </div>
+      </a>
       <h1>Dom Carlos Adriano</h1>
       <h2>Desenvolvedor Web</h2>
       <ul className={style.social_midia}>
