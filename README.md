@@ -1,7 +1,7 @@
 <h1 align="center"> Portifólio </h1>
 
 <p align="center">
-Esse é o meu portifólio, nele posto meus projetos, contato e meu currículo.
+Este é o meu portfólio, onde apresento meus projetos, experiências e meu currículo. Aqui você encontrará exemplos do meu trabalho em desenvolvimento de software, aplicações web e projetos acadêmicos, além de detalhes sobre minhas habilidades técnicas, formações e conquistas.
  <br/>
 </p>
 
